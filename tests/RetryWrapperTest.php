@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams\Tests;
+namespace Tecnovix\Streams\Tests;
 
 class RetryWrapperTest extends WrapperTest {
 
@@ -14,7 +14,7 @@ class RetryWrapperTest extends WrapperTest {
 	 * @return resource
 	 */
 	protected function wrapSource($source) {
-		return \BInfotech\Streams\RetryWrapper::wrap(PartialWrapper::wrap($source));
+		return \Tecnovix\Streams\RetryWrapper::wrap(PartialWrapper::wrap($source));
 	}
 
 	public function testReadDir() {
@@ -27,13 +27,13 @@ class RetryWrapperTest extends WrapperTest {
 
 	public function testFailedRead() {
 		$source = fopen('data://text/plain,foo', 'r');
-		$wrapped = \BInfotech\Streams\RetryWrapper::wrap(FailWrapper::wrap($source));
+		$wrapped = \Tecnovix\Streams\RetryWrapper::wrap(FailWrapper::wrap($source));
 		$this->assertEquals('', fread($wrapped, 10));
 	}
 
 	public function testFailedWrite() {
 		$source = fopen('php://temp', 'w');
-		$wrapped = \BInfotech\Streams\RetryWrapper::wrap(FailWrapper::wrap($source));
+		$wrapped = \Tecnovix\Streams\RetryWrapper::wrap(FailWrapper::wrap($source));
 		$this->assertFalse((bool)fwrite($wrapped, 'foo'));
 	}
 }

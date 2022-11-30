@@ -19,9 +19,9 @@
  *
  */
 
-namespace BInfotech\Streams\Tests;
+namespace Tecnovix\Streams\Tests;
 
-use BInfotech\Streams\CountWrapper;
+use Tecnovix\Streams\CountWrapper;
 
 class CountWrapperTest extends WrapperTest {
 	protected function wrapSource($source, $callback = null) {

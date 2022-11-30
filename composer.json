@@ -1,5 +1,5 @@
 {
-	"name": "binfotech/streams",
+	"name": "tecnovix/streams",
 	"description": "A set of generic stream wrappers",
 	"license": "MIT",
 	"authors": [
@@ -18,12 +18,12 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"BInfotech\\Streams\\": "src/"
+			"Tecnovix\\Streams\\": "src/"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"BInfotech\\Streams\\Tests\\": "tests/"
+			"Tecnovix\\Streams\\Tests\\": "tests/"
 		}
 	}
 }

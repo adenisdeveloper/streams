@@ -19,7 +19,7 @@
  *
  */
 
-namespace BInfotech\Streams;
+namespace Tecnovix\Streams;
 
 /**
  * Wrapper that counts the amount of data read and written

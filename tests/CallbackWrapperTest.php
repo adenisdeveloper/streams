@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams\Tests;
+namespace Tecnovix\Streams\Tests;
 
 class CallbackWrapperTest extends WrapperTest {
 
@@ -19,7 +19,7 @@ class CallbackWrapperTest extends WrapperTest {
 	 * @return resource
 	 */
 	protected function wrapSource($source, $read = null, $write = null, $close = null, $readDir = null, $preClose = null) {
-		return \BInfotech\Streams\CallbackWrapper::wrap($source, $read, $write, $close, $readDir, $preClose);
+		return \Tecnovix\Streams\CallbackWrapper::wrap($source, $read, $write, $close, $readDir, $preClose);
 	}
 
 	public function testWrapInvalidSource() {

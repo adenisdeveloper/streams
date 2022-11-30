@@ -19,9 +19,9 @@
  *
  */
 
-namespace BInfotech\Streams\Tests;
+namespace Tecnovix\Streams\Tests;
 
-class DirectoryWrapperDummy extends \BInfotech\Streams\DirectoryWrapper {
+class DirectoryWrapperDummy extends \Tecnovix\Streams\DirectoryWrapper {
 	public static function wrap($source) {
 		return self::wrapSource($source);
 	}

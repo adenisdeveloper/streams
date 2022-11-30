@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams;
+namespace Tecnovix\Streams;
 
 /**
  * Base class for stream wrappers, wraps an existing stream

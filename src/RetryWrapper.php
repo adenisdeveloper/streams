@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams;
+namespace Tecnovix\Streams;
 
 /**
  * Wrapper that retries reads/writes to remote streams that dont deliver/recieve all requested data at once

@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams;
+namespace Tecnovix\Streams;
 
 /**
  * Stream wrapper that does nothing, used for tests

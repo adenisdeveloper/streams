@@ -5,9 +5,9 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams\Tests;
+namespace Tecnovix\Streams\Tests;
 
-use BInfotech\Streams\Wrapper;
+use Tecnovix\Streams\Wrapper;
 use PHPUnit\Framework\TestCase;
 
 abstract class WrapperTest extends TestCase {

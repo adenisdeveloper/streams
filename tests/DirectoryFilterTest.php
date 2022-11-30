@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams\Tests;
+namespace Tecnovix\Streams\Tests;
 
 use PHPUnit\Framework\TestCase;
 
@@ -41,8 +41,8 @@ class DirectoryFilterTest extends TestCase {
 	}
 
 	private function filter(array $files, callable $filter, array $expected) {
-		$source = \BInfotech\Streams\IteratorDirectory::wrap($files);
-		$filtered = \BInfotech\Streams\DirectoryFilter::wrap($source, $filter);
+		$source = \Tecnovix\Streams\IteratorDirectory::wrap($files);
+		$filtered = \Tecnovix\Streams\DirectoryFilter::wrap($source, $filter);
 		$result = [];
 		while (($file = readdir($filtered)) !== false) {
 			$result[] = $file;

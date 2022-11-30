@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams;
+namespace Tecnovix\Streams;
 
 /**
  * A string-like object that automatically registers a stream wrapper when used and removes the stream wrapper when no longer used

@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams;
+namespace Tecnovix\Streams;
 
 class DirectoryWrapper extends Wrapper implements Directory {
 	public function stream_open($path, $mode, $options, &$opened_path) {

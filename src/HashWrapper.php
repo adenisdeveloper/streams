@@ -21,7 +21,7 @@
  *
  */
 
-namespace BInfotech\Streams;
+namespace Tecnovix\Streams;
 
 abstract class HashWrapper extends Wrapper {
 

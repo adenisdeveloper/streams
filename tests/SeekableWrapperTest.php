@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams\Tests;
+namespace Tecnovix\Streams\Tests;
 
 use PHPUnit\Framework\TestCase;
 
@@ -15,7 +15,7 @@ class SeekableWrapperTest extends TestCase {
 	 * @return resource
 	 */
 	protected function wrapSource($source) {
-		return \BInfotech\Streams\SeekableWrapper::wrap($source);
+		return \Tecnovix\Streams\SeekableWrapper::wrap($source);
 	}
 
 	protected function getSource() {

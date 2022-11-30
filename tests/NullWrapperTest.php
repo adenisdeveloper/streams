@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams\Tests;
+namespace Tecnovix\Streams\Tests;
 
 class NullWrapperTest extends WrapperTest {
 
@@ -14,12 +14,12 @@ class NullWrapperTest extends WrapperTest {
 	 * @return resource
 	 */
 	protected function wrapSource($source) {
-		return \BInfotech\Streams\NullWrapper::wrap($source);
+		return \Tecnovix\Streams\NullWrapper::wrap($source);
 	}
 
 	public function testNoContext() {
 		$this->expectException(\BadMethodCallException::class);
-		stream_wrapper_register('null', '\BInfotech\Streams\NullWrapper');
+		stream_wrapper_register('null', '\Tecnovix\Streams\NullWrapper');
 		$context = stream_context_create([]);
 		try {
 			fopen('null://', 'r+', false, $context);
@@ -32,7 +32,7 @@ class NullWrapperTest extends WrapperTest {
 
 	public function testNoSource() {
 		$this->expectException(\BadMethodCallException::class);
-		stream_wrapper_register('null', '\BInfotech\Streams\NullWrapper');
+		stream_wrapper_register('null', '\Tecnovix\Streams\NullWrapper');
 		$context = stream_context_create([
 			'null' => [
 				'source' => 'bar'

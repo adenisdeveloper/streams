@@ -19,9 +19,9 @@
  *
  */
 
-namespace BInfotech\Streams\Tests;
+namespace Tecnovix\Streams\Tests;
 
-class PartialWrapper extends \BInfotech\Streams\NullWrapper {
+class PartialWrapper extends \Tecnovix\Streams\NullWrapper {
 	public static function wrap($source) {
 		return self::wrapSource($source);
 	}

@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams\Tests;
+namespace Tecnovix\Streams\Tests;
 
 use PHPUnit\Framework\TestCase;
 
@@ -20,7 +20,7 @@ class PathWrapperTest extends TestCase {
 	public function testFileGetContents() {
 		$data = 'foobar';
 		$stream = $this->getDataStream($data);
-		$path = \BInfotech\Streams\PathWrapper::getPath($stream);
+		$path = \Tecnovix\Streams\PathWrapper::getPath($stream);
 		$this->assertSame($data, file_get_contents($path));
 	}
 }

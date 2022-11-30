@@ -21,7 +21,7 @@
  *
  */
 
-namespace BInfotech\Streams\Tests;
+namespace Tecnovix\Streams\Tests;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ class HashWrapperTest extends TestCase {
 	 * @return resource
 	 */
 	protected function wrapSourceRead($source, $hash, $callback) {
-		return \BInfotech\Streams\ReadHashWrapper::wrap($source, $hash, $callback);
+		return \Tecnovix\Streams\ReadHashWrapper::wrap($source, $hash, $callback);
 	}
 
 	/**
@@ -45,7 +45,7 @@ class HashWrapperTest extends TestCase {
 	 * @return resource
 	 */
 	protected function wrapSourceWrite($source, $hash, $callback) {
-		return \BInfotech\Streams\WriteHashWrapper::wrap($source, $hash, $callback);
+		return \Tecnovix\Streams\WriteHashWrapper::wrap($source, $hash, $callback);
 	}
 
 	protected function getSource() {

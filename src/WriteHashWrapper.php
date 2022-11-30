@@ -19,7 +19,7 @@
  *
  */
 
-namespace BInfotech\Streams;
+namespace Tecnovix\Streams;
 
 /**
  * Wrapper that calculates the hash on the stream on write

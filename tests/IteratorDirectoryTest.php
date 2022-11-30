@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams\Tests;
+namespace Tecnovix\Streams\Tests;
 
 use \BadMethodCallException;
 use PHPUnit\Framework\TestCase;
@@ -17,13 +17,13 @@ class IteratorDirectoryTest extends TestCase {
 	 * @return resource
 	 */
 	protected function wrapSource($source) {
-		return \BInfotech\Streams\IteratorDirectory::wrap($source);
+		return \Tecnovix\Streams\IteratorDirectory::wrap($source);
 	}
 
 	public function testNoContext() {
 		$this->expectException(BadMethodCallException::class);
 		$context = stream_context_create([]);
-		stream_wrapper_register('iterator', '\BInfotech\Streams\IteratorDirectory');
+		stream_wrapper_register('iterator', '\Tecnovix\Streams\IteratorDirectory');
 		try {
 			opendir('iterator://', $context);
 			stream_wrapper_unregister('iterator');
@@ -40,7 +40,7 @@ class IteratorDirectoryTest extends TestCase {
 				'foo' => 'bar'
 			]
 		]);
-		stream_wrapper_register('iterator', '\BInfotech\Streams\IteratorDirectory');
+		stream_wrapper_register('iterator', '\Tecnovix\Streams\IteratorDirectory');
 		try {
 			opendir('iterator://', $context);
 			stream_wrapper_unregister('iterator');

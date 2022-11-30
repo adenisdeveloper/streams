@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams;
+namespace Tecnovix\Streams;
 
 /**
  * Wrapper that provides callbacks for url actions such as fopen, unlink, rename
@@ -44,7 +44,7 @@ class UrlCallback extends Wrapper implements Url {
 	 * @param callable $rmdir
 	 * @param callable $unlink
 	 * @param callable $stat
-	 * @return \BInfotech\Streams\Path
+	 * @return \Tecnovix\Streams\Path
 	 *
 	 * @throws \BadMethodCallException
 	 */

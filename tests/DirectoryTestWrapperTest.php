@@ -5,7 +5,7 @@
  * http://opensource.org/licenses/MIT
  */
 
-namespace BInfotech\Streams\Tests;
+namespace Tecnovix\Streams\Tests;
 
 class DirectoryTestWrapperTest extends IteratorDirectoryTest {
 
@@ -14,12 +14,12 @@ class DirectoryTestWrapperTest extends IteratorDirectoryTest {
 	 * @return resource
 	 */
 	protected function wrapSource($source) {
-		$dir = \BInfotech\Streams\IteratorDirectory::wrap($source);
+		$dir = \Tecnovix\Streams\IteratorDirectory::wrap($source);
 		return DirectoryWrapperNull::wrap($dir);
 	}
 
 	public function testManipulateContent() {
-		$source = \BInfotech\Streams\IteratorDirectory::wrap(['asd', 'bar']);
+		$source = \Tecnovix\Streams\IteratorDirectory::wrap(['asd', 'bar']);
 		$wrapped = DirectoryWrapperDummy::wrap($source);
 		$result = [];
 		while (($file = readdir($wrapped)) !== false) {

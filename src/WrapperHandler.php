@@ -19,7 +19,7 @@
  *
  */
 
-namespace BInfotech\Streams;
+namespace Tecnovix\Streams;
 
 class WrapperHandler {
 	/** @var resource $context */
